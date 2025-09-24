@@ -1,0 +1,10 @@
+django
+djangorestframework
+requests
+environs
+django_filter
+django-seed
+django-cors-headers
+celery
+rabbitmq
+drf-yasg
