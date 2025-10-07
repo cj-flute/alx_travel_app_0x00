@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'listings',
+    'rest_framework.authtoken',
+    'listings.apps.AccountsConfig',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +54,15 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'alx_travel_app.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+}
 
 TEMPLATES = [
     {

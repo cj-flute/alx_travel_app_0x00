@@ -8,3 +8,4 @@ django-cors-headers
 celery
 rabbitmq
 drf-yasg
+djangorestframework-simplejwt
